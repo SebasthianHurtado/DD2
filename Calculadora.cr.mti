@@ -1,0 +1,11 @@
+I:/DD2/Dis_Fin/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/displays.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity displays
+-- Compiling architecture rtl of displays
+
+} {} {}}
