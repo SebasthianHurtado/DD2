@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity Sumador_Signo is
+    port (
+        A : in  std_logic_vector(10 downto 0);
+        B : in  std_logic_vector(10 downto 0);
+        S : out std_logic_vector(21 downto 0)  
+    );
+end entity Sumador_Signo;
+
+architecture rtl of Sumador_Signo is
+    signal A_ext : std_logic_vector(11 downto 0);
+    signal B_ext : std_logic_vector(11 downto 0);
+    signal S_ext : std_logic_vector(11 downto 0);
+
+begin
+    
+    -- 1. Extensión de signo manual: concatenamos el MSB a la izquierda del vector
+    A_ext <= A(10) & A;
+    B_ext <= B(10) & B;
+
+    -- 2. Suma puramente combinacional
+    S_ext <= A_ext + B_ext;
+
+    -- 3. Extensor signo
+    S(21 downto 12) <= (Others => S_ext(11));
+    S(11 downto 0) <= S_ext:
+ 
+end architecture rtl;

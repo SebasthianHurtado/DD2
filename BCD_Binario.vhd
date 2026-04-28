@@ -1,27 +1,35 @@
-library ieee;                    
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all; 
 
-entity BCD_BN is             
+entity BCD_BN_Signo is
 port(
-     	   unidades:    in     std_logic_vector(3 downto 0);
-           decenas:     in     std_logic_vector(3 downto 0);
-	   centenas:    in     std_logic_vector(3 downto 0);
-	   num_bn_div8: buffer std_logic_vector(6 downto 0)
+       signo_in   : in  std_logic;                    -- '1' = negativo, '0' = positivo
+       unidades   : in  std_logic_vector(3 downto 0);
+       decenas    : in  std_logic_vector(3 downto 0);
+       centenas   : in  std_logic_vector(3 downto 0);
+       num_bn_div8: out std_logic_vector(7 downto 0)  
     );
-end entity; 
+end entity;
 
-architecture rtl of BCD_BN is
-  signal S1_aux: std_logic_vector(6 downto 0);
-  signal S2_aux: std_logic_vector(9 downto 0);
+architecture rtl of BCD_BN_Signo is
+  signal S1_aux  : std_logic_vector(6 downto 0);
+  signal S2_aux  : std_logic_vector(9 downto 0);
+  signal mag_div8: std_logic_vector(6 downto 0);
+  signal mag_ext : std_logic_vector(7 downto 0);
 begin
+
     -- S1_aux <= 10*centenas + decenas
     S1_aux <= (centenas & "000") + (centenas &  '0') + decenas;
 
     -- S2_aux <= 10*(10 centenas + decenas) + unidades
     S2_aux <= (S1_aux & "000") + (S1_aux &  '0') + unidades;
 
-    -- num_bn_div8 <= (100*centenas + 10*decenas + unidades)/8   
-    num_bn_div8 <= S2_aux(9 downto 3);
+    mag_div8 <= S2_aux(9 downto 3);
+
+    mag_ext <= '0' & mag_div8;
+
+ 
+    num_bn_div8 <= (not mag_ext) + 1 when signo_in = '1' else mag_ext;
 
 end rtl;

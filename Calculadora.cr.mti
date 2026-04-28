@@ -1,4 +1,82 @@
-I:/DD2/Dis_Fin/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/displays.vhd
+I:/DD2/Dis_Fin/Multiplicar.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Multiplicar.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplicar
+-- Compiling architecture SYN of multiplicar
+
+} {} {}} I:/DD2/Dis_Fin/Suma.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Suma.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Sumador_Signo
+-- Compiling architecture rtl of Sumador_Signo
+
+} {} {}} I:/DD2/Dis_Fin/Calculadora.vhd {0 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Calculadora.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+** Error (suppressible): I:/DD2/Dis_Fin/Calculadora.vhd(2): (vcom-1491) Empty source files.
+
+
+} {} {}} I:/DD2/Dis_Fin/Resta.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Resta.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Resta_Signo
+-- Compiling architecture rtl of Resta_Signo
+
+} {} {}} I:/DD2/Dis_Fin/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/ctrl_tec.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ctrl_tec
+-- Compiling architecture rtl of ctrl_tec
+
+} {} {}} I:/DD2/Dis_Fin/Binario_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Binario_BCD.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BIN_a_BCD_21Bits_6D
+-- Compiling architecture rtl of BIN_a_BCD_21Bits_6D
+
+} {} {}} I:/DD2/Dis_Fin/BCD_Binario.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/BCD_Binario.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BCD_BN_Signo
+-- Compiling architecture rtl of BCD_BN_Signo
+
+} {} {}} I:/DD2/Dis_Fin/Operaciones.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Operaciones.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Operaciones
+-- Compiling architecture estructural of Operaciones
+-- Loading entity Sumador_Signo
+-- Loading entity Resta_Signo
+-- Loading entity Multiplicar
+
+} {} {}} I:/DD2/Dis_Fin/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/displays.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,5 +85,15 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity displays
 -- Compiling architecture rtl of displays
+
+} {} {}} I:/DD2/Dis_Fin/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/timer.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity timer
+-- Compiling architecture rtl of timer
 
 } {} {}}

@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all; 
 
-entity BCD_Binario is             
+entity BCD_BN is             
 port(
      	   unidades:    in     std_logic_vector(3 downto 0);
            decenas:     in     std_logic_vector(3 downto 0);
@@ -11,7 +11,7 @@ port(
     );
 end entity; 
 
-architecture rtl of BCDtoBN is
+architecture rtl of BCD_BN is
   signal S1_aux: std_logic_vector(6 downto 0);
   signal S2_aux: std_logic_vector(9 downto 0);
 begin

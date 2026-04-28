@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_signed.all;
+
+entity Operaciones is
+port(
+     clk : 	    in     std_logic;
+     op:           in     std_logic_vector(2 downto 0);
+     num_1:         in     std_logic_vector(10 downto 0);
+     num_2:         in     std_logic_vector(10 downto 0);
+     resultado:     out    std_logic_vector(21 downto 0)
+    );          
+end entity;
+
+architecture estructural of Operaciones is
+	signal suma : std_logic_vector(21 downto 0);
+	signal resta : std_logic_vector(21 downto 0);
+	signal mult : std_logic_vector(21 downto 0);
+begin
+
+    U0: entity work.Sumador_signo(rtl)
+	port map( A => num_1,
+		  B => num_2,
+		  S => suma);
+
+    U1: entity work.Resta_signo(rtl)
+	port map( A => num_1,
+		  B => num_2,
+		  R => resta);
+
+    U2: entity work.Multiplicar(syn)
+	port map( dataa => num_1,
+		  datab => num_2,
+		  result => mult);
+
+    process(op)
+	begin
+    	   case op is
+		when "001" => resultado <= suma;
+		when "010" => resultado <= resta;
+		when "100" => resultado <= mult;
+		when others => resultado <= (others => '0');
+	   end case;
+	end process;
+
+
+
+end estructural;
