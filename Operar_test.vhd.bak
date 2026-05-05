@@ -84,7 +84,7 @@ process
     op <= "000";
     wait until clk'event and clk = '1';
 
-    assert true
+    assert false
     report "fin simulacion"
     severity error;
 end process;

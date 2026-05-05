@@ -72,8 +72,8 @@ process
     wait until clk'event and clk = '1';
 
     --Prueba positivos y negativos
-    A <= "11111110110";
-    B <= "00000001010";
+    A <= "10000000000";
+    B <= "01111111111";
     wait until clk'event and clk = '1';
     op <= "001";
     wait until clk'event and clk = '1';

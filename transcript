@@ -1,0 +1,1197 @@
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+vsim work.test_operar
+# vsim work.test_operar 
+# Start time: 14:08:26 on May 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.test_operar(test)
+# Loading work.operaciones(estructural)
+# Loading work.sumador_signo(rtl)
+# Loading work.resta_signo(rtl)
+# Loading work.multiplicar(syn)
+# Loading lpm.lpm_components
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+vsim work.test_bcd_bin
+# End time: 14:08:33 on May 05,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim work.test_bcd_bin 
+# Start time: 14:08:33 on May 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.test_bcd_bin(test)
+# Loading work.bin_bcd(rtl)
+# Loading work.modulo_suma_bcd(rtl)
+add wave -position insertpoint  \
+sim:/test_bcd_bin/nRst \
+sim:/test_bcd_bin/clk \
+sim:/test_bcd_bin/Tclk \
+sim:/test_bcd_bin/Signo \
+sim:/test_bcd_bin/Resultado \
+sim:/test_bcd_bin/Numero
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: sebasthian.hurtado  Hostname: d8220_p15  ProcessID: 10848
+# 
+#           Attempting to use alternate WLF file "./wlftzm7jfg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzm7jfg
+# 
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 20 (19 downto 0). Right is 22 (21 downto 0).
+#    Time: 290 ns  Iteration: 1  Process: /test_bcd_bin/dut/line__53 File: I:/DD2/Dis_Fin/Bin_BCD.vhd
+# Fatal error in Process line__53 at I:/DD2/Dis_Fin/Bin_BCD.vhd line 63
+# 
+# HDL call sequence:
+# Stopped at I:/DD2/Dis_Fin/Bin_BCD.vhd 63 Process line__53
+# 
+restart
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 20 (19 downto 0). Right is 22 (21 downto 0).
+#    Time: 290 ns  Iteration: 1  Process: /test_bcd_bin/dut/line__53 File: I:/DD2/Dis_Fin/Bin_BCD.vhd
+# Fatal error in Process line__53 at I:/DD2/Dis_Fin/Bin_BCD.vhd line 63
+# 
+# HDL call sequence:
+# Stopped at I:/DD2/Dis_Fin/Bin_BCD.vhd 63 Process line__53
+# 
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+# Compile of Bin_BCD.vhd was successful with warnings.
+add wave -position insertpoint  \
+sim:/test_bcd_bin/dut/contador
+restart
+# Loading work.bin_bcd(rtl)
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 22 (21 downto 0). Right is 20 (0 to 19).
+#    Time: 10 ns  Iteration: 1  Process: /test_bcd_bin/dut/line__53 File: I:/DD2/Dis_Fin/Bin_BCD.vhd
+# Fatal error in Process line__53 at I:/DD2/Dis_Fin/Bin_BCD.vhd line 68
+# 
+# HDL call sequence:
+# Stopped at I:/DD2/Dis_Fin/Bin_BCD.vhd 68 Process line__53
+# 
+# Compile of Bin_BCD.vhd was successful.
+# Compile of Calculadora.vhd failed with 1 errors.
+# Compile of Multiplicar.vhd was successful.
+# Compile of ctrl_tec.vhd was successful.
+# Compile of displays.vhd was successful.
+# Compile of BCD_Binario.vhd was successful.
+# Compile of timer.vhd was successful.
+# Compile of Suma.vhd was successful.
+# Compile of Resta.vhd was successful.
+# Compile of Operaciones.vhd was successful.
+# Compile of Operar_test.vhd was successful.
+# Compile of Bin_BCD.vhd was successful.
+# Compile of Modulo_Suma_BCD.vhd was successful.
+# Compile of Test_BCD_a_Bin.vhd was successful.
+# 13 compiles, 1 failed with 1 error.
+restart
+# Loading work.test_bcd_bin(test)
+# Loading work.bin_bcd(rtl)
+# Loading work.modulo_suma_bcd(rtl)
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Error: fin simulacion
+#    Time: 250 ns  Iteration: 1  Instance: /test_bcd_bin
+# ** Error: fin simulacion
+#    Time: 510 ns  Iteration: 1  Instance: /test_bcd_bin
+# ** Error: fin simulacion
+#    Time: 770 ns  Iteration: 1  Instance: /test_bcd_bin
+# Compile of Test_BCD_a_Bin.vhd was successful.
+restart
+# Loading work.test_bcd_bin(test)
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Error: fin simulacion
+#    Time: 250 ns  Iteration: 1  Instance: /test_bcd_bin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Error: fin simulacion
+#    Time: 510 ns  Iteration: 1  Instance: /test_bcd_bin
+# ** Error: fin simulacion
+#    Time: 770 ns  Iteration: 1  Instance: /test_bcd_bin
+# Compile of Test_BCD_a_Bin.vhd was successful.
+restart
+# Loading work.test_bcd_bin(test)
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /test_bcd_bin/dut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 4  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 2  Instance: /test_bcd_bin/dut/U_MODULO_SUMA_BCD_6_DIGITOS
+# ** Error: fin simulacion
+#    Time: 950 ns  Iteration: 1  Instance: /test_bcd_bin
