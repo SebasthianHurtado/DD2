@@ -2,78 +2,105 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-
-
 entity Bin_BCD is
-port(clk:           in     std_logic;
-     nRst:          in     std_logic;
-     bin_in: 		in	   std_logic_vector(21 downto 0); -- ENTRADA MAXIMA, 998001
-     bcd_out: 		out    std_logic_vector(23 downto 0); --SALIDA MAXIMA, 6 DIGITOS
-     bcd_sign: 		buffer	std_logic
-    );
+port(
+     clk      : in  std_logic;
+     nRst     : in  std_logic;
+     ena	  : in  std_logic;
+     bin_in   : in  std_logic_vector(21 downto 0); -- 22 BITS (incluye bit de signo)
+     bcd_out  : out std_logic_vector(23 downto 0); -- 6 DIGITOS MAX
+     sign_out : out std_logic;                     -- SALIDA DE SIGNO ('1'=Negativo, '0'=Positivo)
+     done     : out std_logic                      -- Señal de fin de conversión
+);
 end entity;
 
 architecture rtl of Bin_BCD is
-  signal P9,P8,P7,P6,P5,P4,P3,P2,P1,P0 : std_logic_vector(23 downto 0);
-  signal P19,P18,P17,P16,P15,P14,P13,P12,P11,P10 : std_logic_vector(23 downto 0);
-  -- registros 
-  signal reg_desp : std_logic_vector(21 downto 0);
-  signal reg_BCD : std_logic_vector(23 downto 0);
-  signal contador : std_logic_vector(4 downto 0);
-  
-   -- modulo sumador BCD 
-  signal next_BCD : std_logic_vector(23 downto 0);
-  signal bit_actual : std_logic;
-  signal Carry_out : std_logic; -- Ultimo acarreo que no sirve
-  signal Modulo : std_logic_vector(21 downto 0);
 
+  -- Señales para el valor absoluto
+  signal signo_int  : std_logic;
+  signal bin_mag    : std_logic_vector(21 downto 0); -- Magnitud/Módulo
+
+  -- Registros internos
+  signal reg_BCD    : std_logic_vector(23 downto 0);
+  signal reg_bin    : std_logic_vector(21 downto 0);
+  signal sign_reg   : std_logic;
+  signal contador   : integer range 0 to 21 := 21; -- Adaptado a 22 bits físicos
+  signal bit_actual : std_logic;
+  
+  -- Señales del modulo sumador BCD 
+  signal next_BCD   : std_logic_vector(23 downto 0);
+  signal Carry_out  : std_logic;
 
 begin
 
+  -- 1. EXTRACCIÓN DE SIGNO Y MÓDULO (Lógica Combinacional)
+  signo_int <= bin_in(21);
+  
+  
+  bin_mag <= (not bin_in) + 1 when signo_int = '1' else bin_in;
 
-  -- MODULO BINARIO ENTRADA + Extraer signo
-    bcd_sign <= bin_in(21); 
-
-    Modulo <= (not bin_in) + 1 when bcd_sign = '1' else 
-                         bin_in;
-
-
-    bit_actual <= reg_desp(19);
+  
+  bit_actual <= bin_mag(21) when contador = 21 else reg_bin(21);
  
-  -- MODULO SUMADOR BCD 
-    U_MODULO_SUMA_BCD_6_DIGITOS: entity work.Modulo_Suma_BCD(rtl)
-      port map(numero_1                  =>  reg_BCD,
-               numero_2                 => reg_BCD,
-               Carry_in               => bit_actual,
-			   resultado_final    => next_BCD,
-               Carry_out         => Carry_out);
+  -- 3. INSTANCIA DEL SUMADOR BCD
+  U_MODULO_SUMA_BCD_6_DIGITOS: entity work.Modulo_Suma_BCD(rtl)
+      port map(
+               numero_1        => reg_BCD,
+               numero_2        => reg_BCD,
+               Carry_in        => bit_actual,
+               resultado_final => next_BCD,
+               Carry_out       => Carry_out
+      );
 
-
-  -- Proceso secuancial, acumulacion.
+  -- 4. MÁQUINA DE ESTADOS (Proceso secuencial)
   process(clk, nRst)
-    begin 
-	 if nRst='1' then
-		reg_desp <= (others => '0');
-		reg_BCD <= (others => '0');
-		bcd_out <= (others => '0');
-		contador <= (others => '0');
-	 elsif clk'event and clk = '1' then
-	  if contador = 0 then 
-		bcd_out <= reg_BCD;
-		reg_desp <= Modulo;
-		reg_BCD <= (others => '0');
-		contador <= "10011";
-	   else 
-	    reg_BCD <= next_BCD;
-		reg_desp <= reg_desp(18 downto 0 ) & '0';
-		contador <= contador -1 ;
-	   end if;
-	   
-	 end if;
-	 end process;
-
- 
-
+  begin 
+     if nRst = '0' then 
+        reg_BCD  <= (others => '0');
+        reg_bin  <= (others => '0');
+        bcd_out  <= (others => '0');
+        sign_out <= '0';
+		sign_reg <= '0';
+        contador <= 21; -- Empezamos en 21 para hacer los 22 desplazamientos
+        done     <= '0';
+        
+     elsif clk'event and clk = '1' then
+          
+        if contador = 21 then 
+           -- ESTADO DE REPOSO (IDLE)
+           -- Solo iniciamos la conversión si recibimos la orden 'enable'
+           if ena = '1' then
+               -- Registramos el signo para que no varíe
+               sign_reg <= signo_int;
+               
+               -- Cargamos la magnitud desplazada
+               reg_bin  <= bin_mag(20 downto 0) & '0';
+               
+               -- Inicializamos reg_BCD concatenando ceros y el primer bit
+               reg_BCD  <= (23 downto 1 => '0') & bin_mag(21);
+               
+               contador <= 20; -- Arrancamos la máquina de estados
+           end if;
+           
+           -- Aseguramos que 'done' baje a '0' después de dar su pulso de aviso 
+           -- en el ciclo anterior, o se mantenga en '0' mientras espera.
+           done <= '0';
+           
+        elsif contador > 0 then         
+           reg_bin  <= reg_bin(20 downto 0) & '0'; 
+           reg_BCD  <= next_BCD;
+           contador <= contador - 1;
+           done     <= '0';
+           
+        elsif contador = 0 then
+           reg_BCD  <= next_BCD;
+           bcd_out  <= next_BCD;
+	       sign_out <= sign_reg;
+           contador <= 21;  -- Volvemos al estado de reposo
+           done     <= '1'; -- ¡Mandamos el pulso de 1 ciclo indicando que terminamos!
+        end if;
+        
+     end if;
+  end process;
 
 end rtl;
-
