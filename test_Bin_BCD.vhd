@@ -1,0 +1,82 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity test_Bin_BCD is
+end entity;
+
+architecture test of test_Bin_BCD is
+  signal clk       : std_logic := '0';
+  signal nRst      : std_logic := '0';
+  signal ena	   : std_logic := '0';
+  signal Numero    : std_logic_vector(21 downto 0) := (others => '0');
+  signal Resultado : std_logic_vector(23 downto 0);
+  signal Signo     : std_logic;
+  signal Done_tb   : std_logic; -- Señal para conectar el puerto 'done'
+
+  constant Tclk    : time := 20 ns; 
+
+begin
+
+  -- 1. Generador de Reloj
+  process
+  begin
+    clk <= '0';
+    wait for Tclk/2;
+    clk <= '1';
+    wait for Tclk/2;
+  end process;
+
+  -- 2. Instancia del Conversor (DUT - Device Under Test)
+  dut: entity work.Bin_BCD(rtl)
+  port map(
+       clk      => clk,
+       nRst     => nRst,
+	   ena		=> ena,
+       bin_in   => Numero,
+       bcd_out  => Resultado,
+       sign_out => Signo,
+       done     => Done_tb  -- Mapeamos nuestra nueva señal
+  );          
+
+  -- 3. Proceso de Estímulos
+  process
+  begin
+    -- Aplicamos el Reset (Activo a nivel BAJO)
+    nRst <= '0';
+    wait for Tclk * 2; 
+    
+    -- Liberamos el reset para que empiece a funcionar
+    nRst <= '1'; 
+
+    -- ==========================================
+    -- TEST 1: Número Positivo
+    -- ==========================================
+    Numero <= "0011011100000001110010";
+	wait until clk'event and clk = '1';
+    ena <= '1';
+    -- ¡Magia! En lugar de contar ciclos manuales, esperamos a la señal de fin
+    wait until Done_tb = '1';
+	ena <= '0';
+    wait for Tclk; -- Esperamos un ciclo extra para visualizar el resultado estable
+
+    -- ==========================================
+    -- TEST 2: Número Negativo
+    -- ==========================================
+    Numero <= "1100100011111100011110";
+	wait until clk'event and clk = '1';
+	ena <= '1';
+    
+    -- Volvemos a esperar a que termine de convertir
+    wait until Done_tb = '1';
+	ena <= '0';
+    wait for Tclk * 5;
+
+    -- Fin de la simulación
+    assert false
+    report "Fin de la simulación - Éxito"
+    severity error;
+    
+  end process;
+
+end test;
