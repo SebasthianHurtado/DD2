@@ -1,66 +1,108 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
-use ieee.std_logic_signed.all;
 
 entity test_BCD_Bin is
 end entity;
 
 architecture test of test_BCD_Bin is
-  signal clk:         std_logic;
-  signal nRst:        std_logic;
-  signal Numero : std_logic_vector(21 downto 0);
-  signal Resultado : std_logic_vector(23 downto 0);
-  signal Signo     : std_logic;
+  signal clk:                std_logic := '0';
+  signal nRst:               std_logic := '0'; 
+  signal ena:                std_logic := '0';    
+  
+  signal Numero_bin    : std_logic_vector(9 downto 0) ;
+  signal Numero_bcd : std_logic_vector(11 downto 0):= (others => '0');
+  signal Signo_in    : std_logic;
+  signal Signo_out    : std_logic;
+  
+  signal Done_test   : std_logic; -- Señal  'done'
+  signal Sim_Final  : boolean := false ; -- Señal de final de simulacion
 
-  constant Tclk:       time := 20 ns; 
+  constant Tclk    : time := 20 ns; 
 
 begin
 
-process
+  -- 1. Generador de Reloj
+  process
   begin
+   while not Sim_Final loop 
     clk <= '0';
     wait for Tclk/2;
-
     clk <= '1';
     wait for Tclk/2;
-
+   end loop;
+   wait;
   end process;
 
+  -- 2. Instancia del Conversor (DUT - Device Under Test)
+  dut: entity work.BCD_BN_Signo(rtl)
+  port map(
+       clk      => clk,
+       nRst     => nRst,
+	   ena		=> ena,
+	   signo_in => Signo_in,
+       bcd_in   => Numero_bcd,
+       num_bin_out  => Numero_bin,
+       signo_out => Signo_out,
+       done     => Done_test  
+  );          
 
-dut: entity work.Bin_BCD(rtl)
-port map(
-     clk => clk,
-     nRst => nRst,
-     bin_in => Numero,
-     bcd_out => Resultado,
-     bcd_sign => Signo
-    );          
-
-
-
-process
+  -- 3. Proceso de Estímulos
+  process
   begin
-    wait until clk'event and clk = '1';
-    nRst <= '1';
-    wait until clk'event and clk = '1';
+    -- Aplicamos el Reset (Activo a nivel BAJO)
     nRst <= '0';
-    wait until clk'event and clk = '1';
-    Numero <= "0011011100000001110010";
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    Numero <= "1100100011111100011110";
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
-    wait until clk'event and clk = '1';
+	ena <= '0';
+    wait for Tclk * 2; 
+    
+    -- Liberamos el reset 
+    nRst <= '1'; 
 
-    assert false
-    report "fin simulacion"
-    severity error;
-end process;
+    -- ==========================================
+    -- TEST 1: Número Positivo
+    -- ==========================================
+    Signo_in <= '0';
+	Numero_bcd <= "1001" & "1001" & "1001"; -- 999 
+	
+	wait until clk'event and clk = '1';
+    ena <= '1';
+    -- Esperamos a la señal de fin
+    wait until Done_test = '1';
+	ena <= '0';
+    wait for Tclk; -- Esperamos un ciclo extra para visualizar el resultado estable
+
+
+    -- ==========================================
+    -- TEST 2: Número Medio 
+    -- ==========================================
+    Signo_in <= '0';
+	Numero_bcd <= "1000" & "1000" & "1000"; -- 888
+	
+	wait until clk'event and clk = '1';
+    ena <= '1';
+    -- Esperamos a la señal de fin
+    wait until Done_test = '1';
+	ena <= '0';
+    wait for Tclk; -- Esperamos un ciclo extra para visualizar el resultado estable
+	
+    -- ==========================================
+    -- TEST 3: Número Negativo
+    -- ==========================================
+    Signo_in <= '1';
+	Numero_bcd <= "1001" & "1001" & "1001"; -- -999 
+	wait until clk'event and clk = '1';
+	ena <= '1';
+    
+    -- Volvemos a esperar a que termine de convertir
+    wait until Done_test = '1';
+	ena <= '0';
+    wait for Tclk * 5;
+
+    -- Fin de la simulación
+    report "Fin de la simulación -Exito";
+    Sim_Final <= true ;
+    wait;
+    
+  end process;
+
 end test;

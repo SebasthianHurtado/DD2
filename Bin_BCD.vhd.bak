@@ -60,7 +60,11 @@ begin
         reg_bin  <= (others => '0');
         bcd_out  <= (others => '0');
         sign_out <= '0';
+<<<<<<< HEAD
+		sign_reg <= '0';
+=======
 		sing_reg <= '0';
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
         contador <= 21; -- Empezamos en 21 para hacer los 22 desplazamientos
         done     <= '0';
         

@@ -53,6 +53,9 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity BCD_BN_Signo
 -- Compiling architecture rtl of BCD_BN_Signo
 
+<<<<<<< HEAD
+} {} {}} I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none {I:\DD2\Dis_Fin\Modulo_Suma_BCD.vhd}
+=======
 } {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/timer.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
@@ -64,6 +67,7 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling architecture rtl of timer
 
 } {} {}} I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -93,15 +97,25 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity Resta_Signo
 -- Compiling architecture rtl of Resta_Signo
 
+<<<<<<< HEAD
+} {} {}} I:/DD2/Dis_Fin/test_Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none {I:\DD2\Dis_Fin\test_Bin_BCD.vhd}
+=======
 } {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/BCD_Binario.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/BCD_Binario.vhd
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
+<<<<<<< HEAD
+-- Compiling entity test_Bin_BCD
+-- Compiling architecture test of test_Bin_BCD
+-- Loading entity Bin_BCD
+=======
 -- Compiling entity BCD_BN_Signo
 -- Compiling architecture rtl of BCD_BN_Signo
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
 
 } {} {}} I:/DD2/Dis_Fin/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/ctrl_tec.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -113,6 +127,9 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity ctrl_tec
 -- Compiling architecture rtl of ctrl_tec
 
+<<<<<<< HEAD
+} {} {}} I:/DD2/Dis_Fin/Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none {I:\DD2\Dis_Fin\Bin_BCD.vhd}
+=======
 } {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Modulo_Suma_BCD.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
@@ -124,6 +141,7 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling architecture rtl of Modulo_Suma_BCD
 
 } {} {}} I:/DD2/Dis_Fin/Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Bin_BCD.vhd
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
