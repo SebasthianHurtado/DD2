@@ -8,6 +8,7 @@ port(
 	nRst 		  : in std_logic;
 	tecla		  : in std_logic_vector(3 downto 0);
 	pres		  : buffer std_logic_vector(1 downto 0);
+<<<<<<< HEAD
 	op			  : buffer std_logic_vector(1 downto 0);
 	ena			  : buffer std_logic;
 	op1           : buffer std_logic_vector(11 downto 0);
@@ -16,11 +17,22 @@ port(
     op2_sgn       : buffer std_logic;
     res           : buffer std_logic_vector(23 downto 0);
     res_sgn       : buffer std_logic
+=======
+	op			  : out std_logic_vector(2 downto 0);
+	ena			  : out std_logic;
+	op1           : out std_logic_vector(11 downto 0);
+    op1_sgn       : out std_logic;
+    op2           : out std_logic_vector(11 downto 0);
+    op2_sgn       : out std_logic;
+    res           : out std_logic_vector(23 downto 0);
+    res_sgn       : out std_logic;
+>>>>>>> 559f52028348a0f235d31a60e83d565cc40430a1
      ); 
 end entity;
 
 architecture estructural of Calculadora_interfaz is
   type t_estado is (operando1, operando2, resultado);
+<<<<<<< HEAD
   signal estado, estado_sig: t_estado;
   signal registro_actual : std_logic_vector(11 downto 0);
   signal signo_actual    : std_logic;
@@ -96,7 +108,7 @@ begin
 				when X"E" => op <= "11";
 						estado_sig <= operando2;
 						num_max <= (others => '0');
-				when others => op <= (others => '0'); 
+				when others => op <= (others => '0');
 			end case;
 			
 			when operando2 =>
@@ -165,5 +177,34 @@ begin
 	end if;
 	end process;
 	
+=======
+  signal estado: t_estado;
+  signal registro_actual : std_logic_vector(11 downto 0);
+  signal signo_actual    : std_logic;
+
+begin
+
+	process_estado: process(clk, nRst)
+	if nRrst = '0' then
+		estado <= operando1;
+	elsif clk'event and clk = '1' then
+		case estado is
+			when operando1 =>
+			op1 <= registro_actual;
+			op1_sign <= signo_actual;
+			pres <= 0;
+
+			when operando2 =>
+			op2 <= registro_actual;
+			op2_sign <= signo_actual;
+			pres <= 1;
+
+			when resultado =>
+			pres <= 2;
+
+
+	end process;
+
+>>>>>>> 559f52028348a0f235d31a60e83d565cc40430a1
 
 end estructural;

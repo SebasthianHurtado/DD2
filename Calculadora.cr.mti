@@ -1,4 +1,12 @@
-I:/DD2/Dis_Fin/BCD_Binario.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/BCD_Binario.vhd
+C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Multiplicar.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Multiplicar.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplicar
+-- Compiling architecture SYN of multiplicar
+
+} {} {}} I:/DD2/Dis_Fin/BCD_Binario.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/BCD_Binario.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -8,7 +16,44 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity BCD_BN_Signo
 -- Compiling architecture rtl of BCD_BN_Signo
 
-} {} {}} I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none {I:\DD2\Dis_Fin\Modulo_Suma_BCD.vhd}
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Test_BCD_a_Bin.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Test_BCD_a_Bin.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_BCD_Bin
+-- Compiling architecture test of test_BCD_Bin
+-- Loading entity Bin_BCD
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Operar_test.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Operar_test.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity test_operar
+-- Compiling architecture test of test_operar
+-- Loading entity Operaciones
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Operaciones.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Operaciones.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Operaciones
+-- Compiling architecture estructural of Operaciones
+-- Loading entity Sumador_Signo
+-- Loading entity Resta_Signo
+-- Loading entity Multiplicar
+
+} {} {}} I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,6 +62,16 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Modulo_Suma_BCD
 -- Compiling architecture rtl of Modulo_Suma_BCD
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/timer.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity timer
+-- Compiling architecture rtl of timer
 
 } {} {}} I:/DD2/Dis_Fin/Suma.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Suma.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -38,7 +93,7 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity Resta_Signo
 -- Compiling architecture rtl of Resta_Signo
 
-} {} {}} I:/DD2/Dis_Fin/test_Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none {I:\DD2\Dis_Fin\test_Bin_BCD.vhd}
+} {} {}} I:/DD2/Dis_Fin/test_Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/test_Bin_BCD.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -48,6 +103,23 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity test_Bin_BCD
 -- Compiling architecture test of test_Bin_BCD
 -- Loading entity Bin_BCD
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/BCD_Binario.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/BCD_Binario.vhd
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+<<<<<<< HEAD
+-- Compiling entity test_Bin_BCD
+-- Compiling architecture test of test_Bin_BCD
+-- Loading entity Bin_BCD
+=======
+-- Compiling entity BCD_BN_Signo
+-- Compiling architecture rtl of BCD_BN_Signo
+>>>>>>> dccfc0dcae082198e929a039b9a06a666dbde5c7
 
 } {} {}} I:/DD2/Dis_Fin/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/ctrl_tec.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -80,11 +152,77 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity displays
 -- Compiling architecture rtl of displays
 
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Modulo_Suma_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Modulo_Suma_BCD.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Modulo_Suma_BCD
+-- Compiling architecture rtl of Modulo_Suma_BCD
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Suma.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Suma.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Sumador_Signo
+-- Compiling architecture rtl of Sumador_Signo
+
 } {} {}} I:/DD2/Dis_Fin/Calculadora.vhd {0 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Calculadora.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
-** Error (suppressible): I:/DD2/Dis_Fin/Calculadora.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Calculadora_interfaz
+** Error: I:/DD2/Dis_Fin/Calculadora.vhd(20): near ")": (vcom-1576) expecting IDENTIFIER.
 
+
+} {9.0 10.0} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Resta.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Resta.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity Resta_Signo
+-- Compiling architecture rtl of Resta_Signo
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/ctrl_tec.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ctrl_tec
+-- Compiling architecture rtl of ctrl_tec
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/displays.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity displays
+-- Compiling architecture rtl of displays
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Bin_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Bin_BCD.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Bin_BCD
+-- Compiling architecture rtl of Bin_BCD
+-- Loading entity Modulo_Suma_BCD
 
 } {} {}} I:/DD2/Dis_Fin/Multiplicar.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Multiplicar.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -93,6 +231,18 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package std_logic_1164
 -- Compiling entity Multiplicar
 -- Compiling architecture SYN of multiplicar
+
+} {} {}} C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Calculadora.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Calculadora.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+** Error (suppressible): C:/Users/ineot/OneDrive/Documentos/DD2/Dis_fin/Calculadora.vhd(2): (vcom-1491) Empty source files.
+
+
+} {} {}} I:/DD2/Dis_Fin/Test_BCD_a_Bin.vhd {0 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Test_BCD_a_Bin.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+** Error (suppressible): I:/DD2/Dis_Fin/Test_BCD_a_Bin.vhd(1): (vcom-1491) Empty source files.
+
 
 } {} {}} I:/DD2/Dis_Fin/Operaciones.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Operaciones.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -108,7 +258,7 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading entity Resta_Signo
 -- Loading entity Multiplicar
 
-} {} {}} I:/DD2/Dis_Fin/Operar_test.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Operar_test.vhd
+} {} {}} I:/DD2/Dis_Fin/Operar_test.vhd {0 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/Operar_test.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -119,8 +269,11 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity test_operar
 -- Compiling architecture test of test_operar
 -- Loading entity Operaciones
+** Error (suppressible): I:/DD2/Dis_Fin/Operar_test.vhd(33): (vcom-1272) Length of formal "op" is 2; length of actual is 3.
 
-} {} {}} I:/DD2/Dis_Fin/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/timer.vhd
+** Error: I:/DD2/Dis_Fin/Operar_test.vhd(91): VHDL Compiler exiting
+
+} {14.0 15.0} {}} I:/DD2/Dis_Fin/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none I:/DD2/Dis_Fin/timer.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
