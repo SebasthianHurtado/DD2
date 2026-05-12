@@ -6,7 +6,7 @@ entity Bin_BCD is
 port(
      clk      : in  std_logic;
      nRst     : in  std_logic;
-     ena      : in  std_logic;
+     ena	  : in  std_logic;
      bin_in   : in  std_logic_vector(21 downto 0); -- 22 BITS (incluye bit de signo)
      bcd_out  : out std_logic_vector(23 downto 0); -- 6 DIGITOS MAX
      sign_out : out std_logic;                     -- SALIDA DE SIGNO ('1'=Negativo, '0'=Positivo)

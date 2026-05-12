@@ -5,7 +5,7 @@ use ieee.std_logic_signed.all;
 
 entity Operaciones is
 port(
-     op:           in     std_logic_vector(2 downto 0);
+     op:           in     std_logic_vector(1 downto 0);
      num_1:         in     std_logic_vector(10 downto 0);
      num_2:         in     std_logic_vector(10 downto 0);
      resultado:     out    std_logic_vector(21 downto 0)
@@ -36,9 +36,9 @@ begin
     process(op)
 	begin
     	   case op is
-		when "001" => resultado <= suma;
-		when "010" => resultado <= resta;
-		when "100" => resultado <= mult;
+		when "01" => resultado <= suma;
+		when "10" => resultado <= resta;
+		when "11" => resultado <= mult;
 		when others => resultado <= (others => '0');
 	   end case;
 	end process;

@@ -3,57 +3,29 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all; 
 
 entity BCD_BN_Signo is
-port(  clk        : in std_logic;
-	   nRst       : in std_logic;
-	   ena       : in std_logic;
+port(
        signo_in   : in  std_logic;                    -- '1' = negativo, '0' = positivo
-       bcd_in     : in std_logic_vector(11 downto 0);  
-       num_bin_out: out std_logic_vector(9 downto 0);
-       signo_out  : out  std_logic;
-       done  	  : out  std_logic
+       unidades   : in  std_logic_vector(3 downto 0);
+       decenas    : in  std_logic_vector(3 downto 0);
+       centenas   : in  std_logic_vector(3 downto 0);
+       resultado  : out std_logic_vector(10 downto 0)  
     );
 end entity;
 
 architecture rtl of BCD_BN_Signo is
-  signal unidades: std_logic_vector(3 downto 0);
-  signal decenas : std_logic_vector(3 downto 0);
-  signal centenas: std_logic_vector(3 downto 0);
-  
   signal S1_aux  : std_logic_vector(6 downto 0);
   signal S2_aux  : std_logic_vector(9 downto 0);
-  
-
+  signal mag_ext : std_logic_vector(10 downto 0);
 begin
-    
-	centenas <= bcd_in(11 downto 8);
-	decenas <= bcd_in(7 downto 4);
-	unidades <= bcd_in(3 downto 0);
 
-    -- Conversion
     -- S1_aux <= 10*centenas + decenas
-    S1_aux <= (centenas & "000") + ("00" & centenas &  '0') + ("000" & decenas);
+    S1_aux <= (centenas & "000") + (centenas &  '0') + decenas;
 
     -- S2_aux <= 10*(10 centenas + decenas) + unidades
-    S2_aux <= (S1_aux & "000") + ("00" & S1_aux &  '0') + ("000000" &unidades);
-	
-	-- Asignacion y done 
-    process (clk,nRst)
-	begin 
-	  if nRst = '0' then 
-	      num_bin_out <= (others => '0');
-		  signo_out <= '0';
-		  done <= '0';
-	   elsif clk'event and clk = '1' then
-	      if ena = '1' then 
-		    num_bin_out <= S2_aux;
-			signo_out <= signo_in;
-			done <= '1';
-	       else
-		    done <= '0';
-	       end if;
-	   end if;
-	end process;
-		  	  
-   
+    S2_aux <= (S1_aux & "000") + (S1_aux &  '0') + unidades;
+
+    mag_ext <= S2_aux;
+
+    resultado <= (not mag_ext) + 1 when signo_in = '1' else mag_ext;
 
 end rtl;
