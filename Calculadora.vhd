@@ -26,13 +26,14 @@ architecture estructural of Calculadora_interfaz is
     -- Registros internos
     signal registro_actual : std_logic_vector(11 downto 0);
     signal signo_actual    : std_logic;
-    signal num_max         : std_logic_vector(2 downto 0); -- Ampliado a 3 bits para contar de 0 a 3 con seguridad
+    signal num_max         : std_logic_vector(2 downto 0);
     
     -- Señales de interconexión
     signal res_bin         : std_logic_vector(21 downto 0);
     signal num_1_Bin       : std_logic_vector(10 downto 0);
     signal num_2_Bin       : std_logic_vector(10 downto 0);
     signal done            : std_logic;
+	signal tecla_ant 	   : std_logic_vector(3 downto 0);
 
 begin
     
@@ -76,14 +77,11 @@ begin
        done     => done
     );
 
-    -- ==========================================
-    -- Máquina de Estados y Control de Registros
-    -- ==========================================
-    -- Un único proceso síncrono evita múltiples drivers y latches
+ 
+
     process_control: process(clk, nRst)
     begin
         if nRst = '0' then
-            -- Reset general asíncrono
             estado          <= operando1;
             op1             <= (others => '0');
             op1_sgn         <= '0';
@@ -95,50 +93,49 @@ begin
             registro_actual <= (others => '0');
             signo_actual    <= '0';
             num_max         <= (others => '0');
+            tecla_ant       <= (others => '1'); -- Inicializamos a un valor que no sea número
             
         elsif clk'event and clk = '1' then
-            -- Por defecto, 'ena' es un pulso que dura solo 1 ciclo
-            ena <= '0'; 
-
+            -- Guardamos el valor de la tecla del ciclo anterior para detectar cambios
+            tecla_ant <= tecla;
+            
             case estado is
                 -- ----------------------------------------------------
                 -- ESTADO: OPERANDO 1
                 -- ----------------------------------------------------
                 when operando1 =>
                     pres <= "00";
+                    ena  <= '0';
                     
-                    -- Entrada de números (0 al 9)
-                    if tecla <= X"9" then
-                        -- Permitimos hasta 3 dígitos (0, 1, 2)
-                        if num_max < 3 then
-                            -- Desplazamiento correcto del registro a la izquierda
-                            registro_actual <= registro_actual(7 downto 0) & tecla;
-                            num_max <= num_max + 1;
+                    -- SOLO actuamos si la tecla ha cambiado respecto al ciclo anterior (flanco)
+                    if tecla /= tecla_ant then
+                        -- Entrada de números (0 al 9)
+                        if tecla <= X"9" then
+                            if num_max < 3 then
+                                registro_actual <= registro_actual(7 downto 0) & tecla;
+                                num_max <= num_max + 1;
+                            end if;
+                            
+                        -- Cambio de signo (Tecla C)
+                        elsif tecla = X"C" then
+                            signo_actual <= not signo_actual;
+                            
+                        -- Teclas de Operación (A, D, E)
+                        elsif tecla = X"A" or tecla = X"D" or tecla = X"E" then
+                            if    tecla = X"A" then op <= "01";
+                            elsif tecla = X"D" then op <= "10";
+                            elsif tecla = X"E" then op <= "11";
+                            end if;
+                            
+                            op1     <= registro_actual;
+                            op1_sgn <= signo_actual;
+                            
+                            registro_actual <= (others => '0');
+                            signo_actual    <= '0';
+                            num_max         <= (others => '0');
+                            
+                            estado <= operando2;
                         end if;
-                        
-                    -- Cambio de signo (Tecla C)
-                    elsif tecla = X"C" then
-                        signo_actual <= not signo_actual;
-                        
-                    -- Teclas de Operación (A, D, E)
-                    elsif tecla = X"A" or tecla = X"D" or tecla = X"E" then
-                        -- Guardamos la operación
-                        if    tecla = X"A" then op <= "01";
-                        elsif tecla = X"D" then op <= "10";
-                        elsif tecla = X"E" then op <= "11";
-                        end if;
-                        
-                        -- Transferimos el registro a op1
-                        op1     <= registro_actual;
-                        op1_sgn <= signo_actual;
-                        
-                        -- Limpiamos el registro para el siguiente operando
-                        registro_actual <= (others => '0');
-                        signo_actual    <= '0';
-                        num_max         <= (others => '0');
-                        
-                        -- Avanzamos de estado
-                        estado <= operando2;
                     end if;
 
                 -- ----------------------------------------------------
@@ -146,27 +143,24 @@ begin
                 -- ----------------------------------------------------
                 when operando2 =>
                     pres <= "01";
+                    ena  <= '0';
                     
-                    -- Entrada de números (0 al 9)
-                    if tecla <= X"9" then
-                        if num_max < 3 then
-                            registro_actual <= registro_actual(7 downto 0) & tecla;
-                            num_max <= num_max + 1;
+                    if tecla /= tecla_ant then
+                        if tecla <= X"9" then
+                            if num_max < 3 then
+                                registro_actual <= registro_actual(7 downto 0) & tecla;
+                                num_max <= num_max + 1;
+                            end if;
+                            
+                        elsif tecla = X"C" then
+                            signo_actual <= not signo_actual;
+                            
+                        -- Tecla Igual (B)
+                        elsif tecla = X"B" then
+                            op2     <= registro_actual;
+                            op2_sgn <= signo_actual;
+                            estado <= resultado;
                         end if;
-                        
-                    -- Cambio de signo (Tecla C)
-                    elsif tecla = X"C" then
-                        signo_actual <= not signo_actual;
-                        
-                    -- Tecla Igual (B)
-                    elsif tecla = X"B" then
-                        -- Transferimos a op2
-                        op2     <= registro_actual;
-                        op2_sgn <= signo_actual;
-                        
-                        -- Disparamos el cálculo
-                        ena    <= '1'; 
-                        estado <= resultado;
                     end if;
 
                 -- ----------------------------------------------------
@@ -175,26 +169,34 @@ begin
                 when resultado =>
                     pres <= "10";
                     
-                    -- Si se pulsa un nuevo número o la tecla C, reiniciamos la calculadora
-                    if tecla <= X"9" or tecla = X"C" then
-                        op1             <= (others => '0');
-                        op1_sgn         <= '0';
-                        op2             <= (others => '0');
-                        op2_sgn         <= '0';
-                        op              <= "00";
+                    -- Mantenemos el ENABLE a 1 todo el tiempo que estemos en este estado
+                    -- para que Bin_BCD pueda terminar su conversión tranquilamente.
+                    ena  <= '1'; 
+                    
+                    -- Solo salimos del resultado si detectamos que se HA PULSADO una tecla nueva
+                    if tecla /= tecla_ant then
                         
-                        -- Si pulsó un número, lo guardamos como el primer dígito del nuevo op1
-                        if tecla <= X"9" then
-                            registro_actual <= X"00" & tecla;
-                            signo_actual    <= '0';
-                            num_max         <= "001";
-                        else
-                            registro_actual <= (others => '0');
-                            signo_actual    <= '0';
-                            num_max         <= (others => '0');
+                        -- Verificamos si es una tecla válida para reiniciar (Número o C)
+                        -- (Asumiendo que X"F" es el estado de reposo del teclado)
+                        if tecla <= X"9" or tecla = X"C" then
+                            op1             <= (others => '0');
+                            op1_sgn         <= '0';
+                            op2             <= (others => '0');
+                            op2_sgn         <= '0';
+                            op              <= "00";
+                            
+                            if tecla <= X"9" then
+                                registro_actual <= X"00" & tecla;
+                                signo_actual    <= '0';
+                                num_max         <= "001";
+                            else
+                                registro_actual <= (others => '0');
+                                signo_actual    <= '0';
+                                num_max         <= (others => '0');
+                            end if;
+                            
+                            estado <= operando1;
                         end if;
-                        
-                        estado <= operando1;
                     end if;
 
                 when others =>
