@@ -6,7 +6,7 @@ entity Calculadora_interfaz is
 port(
 	clk	 		  : in std_logic;
 	nRst 		  : in std_logic;
-	tecla		  : in std_logic_vector(3 downto 0);
+	tecla	  : in std_logic_vector(3 downto 0);
 	pres		  : buffer std_logic_vector(1 downto 0);
 	op			  : buffer std_logic_vector(1 downto 0);
 	ena			  : buffer std_logic;
@@ -27,12 +27,11 @@ architecture estructural of Calculadora_interfaz is
   signal tipo_tecla		 : std_logic_vector(1 downto 0); --00 nada, 01 numero, 10, letra
   signal num_max 		 : std_logic_vector(1 downto 0);
   signal res_bin		 : std_logic_vector(21 downto 0);
-  signal num_1_Bin			 : std_logic_vector(10 downto 0);
-  signal num_2_Bin			 : std_logic_vector(10 downto 0);
+  signal num_1_Bin		 : std_logic_vector(10 downto 0);
+  signal num_2_Bin		 : std_logic_vector(10 downto 0);
   signal done			 : std_logic;
 begin
 	
-
 	BCD_a_BIN_1: entity work.BCD_BN_Signo(rtl)
 	port map(
        signo_in    => op1_sgn,
@@ -75,6 +74,8 @@ begin
 	begin
 	if nRst = '0' then
 		estado <= operando1;
+		op1 <= (others => '0');
+		
 	elsif clk'event and clk = '1' then
 		estado <= estado_sig;
 	end if;
@@ -89,13 +90,10 @@ begin
 			case tecla is
 				when X"A" => op <= "01";
 						estado_sig <= operando2;
-						num_max <= (others => '0');
 				when X"D" => op <= "10";
 						estado_sig <= operando2;
-						num_max <= (others => '0');
 				when X"E" => op <= "11";
 						estado_sig <= operando2;
-						num_max <= (others => '0');
 				when others => op <= (others => '0');
 			end case;
 			
@@ -148,7 +146,7 @@ begin
 
 	process_registro: process(clk, nRst)
 	begin
-	if nRst = '0' then
+	if nRst = '0' or op'event then
 		registro_actual <= (others => '0');
 		signo_actual <= '0';
 		num_max <= (others => '0');
@@ -165,5 +163,6 @@ begin
 	end if;
 	end process;
 	
+
 
 end estructural;
