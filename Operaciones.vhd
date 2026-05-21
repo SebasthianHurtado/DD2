@@ -33,7 +33,7 @@ begin
 		  datab => num_2,
 		  result => mult);
 
-    process(op)
+    process(op, suma, resta, mult)
 	begin
     	   case op is
 		when "01" => resultado <= suma;

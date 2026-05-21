@@ -33,7 +33,7 @@ architecture estructural of Calculadora_interfaz is
     signal num_1_Bin       : std_logic_vector(10 downto 0);
     signal num_2_Bin       : std_logic_vector(10 downto 0);
     signal done            : std_logic;
-	signal tecla_ant 	   : std_logic_vector(3 downto 0);
+    signal tecla_ant       : std_logic_vector(3 downto 0);
 
 begin
     
@@ -77,8 +77,6 @@ begin
        done     => done
     );
 
- 
-
     process_control: process(clk, nRst)
     begin
         if nRst = '0' then
@@ -93,10 +91,9 @@ begin
             registro_actual <= (others => '0');
             signo_actual    <= '0';
             num_max         <= (others => '0');
-            tecla_ant       <= (others => '1'); -- Inicializamos a un valor que no sea número
+            tecla_ant       <= X"F"; -- X"F" representa el estado de reposo del teclado
             
         elsif clk'event and clk = '1' then
-            -- Guardamos el valor de la tecla del ciclo anterior para detectar cambios
             tecla_ant <= tecla;
             
             case estado is
@@ -107,20 +104,19 @@ begin
                     pres <= "00";
                     ena  <= '0';
                     
-                    -- SOLO actuamos si la tecla ha cambiado respecto al ciclo anterior (flanco)
-                    if tecla /= tecla_ant then
-                        -- Entrada de números (0 al 9)
+                    if tecla /= tecla_ant and tecla /= X"F" then
                         if tecla <= X"9" then
-                            if num_max < 3 then
+                            -- ESP10: Ignorar si el primer dígito introducido es un 0
+                            if num_max = "000" and tecla = X"0" then
+                                null; 
+                            elsif num_max < 3 then
                                 registro_actual <= registro_actual(7 downto 0) & tecla;
                                 num_max <= num_max + 1;
                             end if;
                             
-                        -- Cambio de signo (Tecla C)
                         elsif tecla = X"C" then
                             signo_actual <= not signo_actual;
                             
-                        -- Teclas de Operación (A, D, E)
                         elsif tecla = X"A" or tecla = X"D" or tecla = X"E" then
                             if    tecla = X"A" then op <= "01";
                             elsif tecla = X"D" then op <= "10";
@@ -143,11 +139,14 @@ begin
                 -- ----------------------------------------------------
                 when operando2 =>
                     pres <= "01";
-                    ena  <= '0';
+                    ena  <= '0'; 
                     
-                    if tecla /= tecla_ant then
+                    if tecla /= tecla_ant and tecla /= X"F" then
                         if tecla <= X"9" then
-                            if num_max < 3 then
+                            -- ESP10: Ignorar si el primer dígito introducido es un 0
+                            if num_max = "000" and tecla = X"0" then
+                                null;
+                            elsif num_max < 3 then
                                 registro_actual <= registro_actual(7 downto 0) & tecla;
                                 num_max <= num_max + 1;
                             end if;
@@ -159,6 +158,10 @@ begin
                         elsif tecla = X"B" then
                             op2     <= registro_actual;
                             op2_sgn <= signo_actual;
+                            
+                            -- Iniciamos la conversión con un pulso en alto durante la transición
+                            ena     <= '1'; 
+                            
                             estado <= resultado;
                         end if;
                     end if;
@@ -169,34 +172,29 @@ begin
                 when resultado =>
                     pres <= "10";
                     
-                    -- Mantenemos el ENABLE a 1 todo el tiempo que estemos en este estado
-                    -- para que Bin_BCD pueda terminar su conversión tranquilamente.
-                    ena  <= '1'; 
+                    -- Bajamos el enable inmediatamente, consolidando el pulso de 1 ciclo
+                    ena  <= '0'; 
                     
-                    -- Solo salimos del resultado si detectamos que se HA PULSADO una tecla nueva
-                    if tecla /= tecla_ant then
+                    -- ESP13: Cualquier tecla sale del modo de presentación
+                    if tecla /= tecla_ant and tecla /= X"F" then
                         
-                        -- Verificamos si es una tecla válida para reiniciar (Número o C)
-                        -- (Asumiendo que X"F" es el estado de reposo del teclado)
-                        if tecla <= X"9" or tecla = X"C" then
-                            op1             <= (others => '0');
-                            op1_sgn         <= '0';
-                            op2             <= (others => '0');
-                            op2_sgn         <= '0';
-                            op              <= "00";
-                            
-                            if tecla <= X"9" then
-                                registro_actual <= X"00" & tecla;
-                                signo_actual    <= '0';
-                                num_max         <= "001";
-                            else
-                                registro_actual <= (others => '0');
-                                signo_actual    <= '0';
-                                num_max         <= (others => '0');
-                            end if;
-                            
-                            estado <= operando1;
+                        op1             <= (others => '0');
+                        op1_sgn         <= '0';
+                        op2             <= (others => '0');
+                        op2_sgn         <= '0';
+                        op              <= "00";
+                        
+                        if tecla <= X"9" then
+                            registro_actual <= X"00" & tecla;
+                            signo_actual    <= '0';
+                            num_max         <= "001";
+                        else
+                            registro_actual <= (others => '0');
+                            signo_actual    <= '0';
+                            num_max         <= (others => '0');
                         end if;
+                        
+                        estado <= operando1;
                     end if;
 
                 when others =>

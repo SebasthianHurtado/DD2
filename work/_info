@@ -75,7 +75,7 @@ R9
 R10
 R11
 Ebcd_bn_signo
-Z15 w1778586626
+Z15 w1779360127
 R0
 R1
 R2
@@ -89,9 +89,9 @@ VjZXUQCcBK5W7m;c1?X^Bb1
 !s100 Y_?Bd]P0WL`2j65Y?4eza3
 R7
 32
-Z16 !s110 1779190274
+Z16 !s110 1779360252
 !i10b 1
-Z17 !s108 1779190274.000000
+Z17 !s108 1779360252.000000
 R8
 R9
 !i113 1
@@ -161,74 +161,74 @@ R25
 R10
 R11
 Ebin_bcd
-Z26 w1778587337
+R15
 R0
 R1
 R2
 R3
 R4
-Z27 8I:/DD2/Dis_Fin/Bin_BCD.vhd
-Z28 FI:/DD2/Dis_Fin/Bin_BCD.vhd
+Z26 8I:/DD2/Dis_Fin/Bin_BCD.vhd
+Z27 FI:/DD2/Dis_Fin/Bin_BCD.vhd
 l0
 L5
 V@`oB?F1gE32Z1P_68ehfA3
 !s100 8L]M1kWo9TA<FY0mdPOKP3
 R7
 32
-R16
+Z28 !s110 1779360251
 !i10b 1
-R17
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Bin_BCD.vhd|
-Z30 !s107 I:/DD2/Dis_Fin/Bin_BCD.vhd|
+Z29 !s108 1779360230.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Bin_BCD.vhd|
+Z31 !s107 I:/DD2/Dis_Fin/Bin_BCD.vhd|
 !i113 1
 R10
 R11
 Artl
-Z31 DEx4 work 15 modulo_suma_bcd 0 22 ^[@aGcHRaBY_@n6hdV1];1
+Z32 DEx4 work 15 modulo_suma_bcd 0 22 ^[@aGcHRaBY_@n6hdV1];1
 R0
 R1
 R2
 R3
-Z32 DEx4 work 7 bin_bcd 0 22 @`oB?F1gE32Z1P_68ehfA3
+Z33 DEx4 work 7 bin_bcd 0 22 @`oB?F1gE32Z1P_68ehfA3
 l34
 L17
 V7kb=FI=eAWU<P3SDc5NJ_0
 !s100 kijPX`boIzNeioK;5jf5A3
 R7
 32
-R16
+R28
 !i10b 1
-R17
 R29
 R30
+R31
 !i113 1
 R10
 R11
 Ecalculadora_interfaz
-Z33 w1779190265
+R15
 R0
 R1
 R2
 R3
 R4
-Z34 8I:\DD2\Dis_Fin\Calculadora.vhd
-Z35 FI:\DD2\Dis_Fin\Calculadora.vhd
+Z34 8I:/DD2/Dis_Fin/Calculadora.vhd
+Z35 FI:/DD2/Dis_Fin/Calculadora.vhd
 l0
 L5
-Vo_MI<onbW?g`LK1QVWK^i3
-!s100 D_VElf3PhWQUj6OL7GV>?3
+VT;9F<YdI3H=ddc?Si`3G?1
+!s100 K7kk7cakBF6ddi<W4MCZH3
 R7
 32
-Z36 !s110 1779190271
+Z36 !s110 1779360227
 !i10b 1
-Z37 !s108 1779190271.000000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:\DD2\Dis_Fin\Calculadora.vhd|
-Z39 !s107 I:\DD2\Dis_Fin\Calculadora.vhd|
+Z37 !s108 1779360227.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Calculadora.vhd|
+Z39 !s107 I:/DD2/Dis_Fin/Calculadora.vhd|
 !i113 1
 R10
 R11
 Aestructural
-R32
+R33
 Z40 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 Z41 DEx4 work 11 operaciones 0 22 nSKkoATfn4j_Zm4e`VU=g0
 R18
@@ -236,11 +236,11 @@ R0
 R1
 R2
 R3
-Z42 DEx4 work 20 calculadora_interfaz 0 22 o_MI<onbW?g`LK1QVWK^i3
-l33
+Z42 DEx4 work 20 calculadora_interfaz 0 22 T;9F<YdI3H=ddc?Si`3G?1
+l38
 L22
-V71bPbn36X5L4A=nCB<c4Z1
-!s100 kUcAm0=b01cjbdZALM3TI3
+VagiAo3=m2GS8NGGzd;MhL0
+!s100 kKDcM]5Pd02aic`NU_i]32
 R7
 32
 R36
@@ -252,25 +252,25 @@ R39
 R10
 R11
 Ectrl_tec
-Z43 w1776769122
+R15
 R0
 R1
 R2
 R3
 R4
-Z44 8I:/DD2/Dis_Fin/ctrl_tec.vhd
-Z45 FI:/DD2/Dis_Fin/ctrl_tec.vhd
+Z43 8I:/DD2/Dis_Fin/ctrl_tec.vhd
+Z44 FI:/DD2/Dis_Fin/ctrl_tec.vhd
 l0
 L6
 VD_W8NPzaRHK_XzbW_z1Q72
 !s100 ^>2iFUNlVUL0CH2:VM7Gd0
 R7
 32
-R36
+Z45 !s110 1779360228
 !i10b 1
-R37
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/ctrl_tec.vhd|
-Z47 !s107 I:/DD2/Dis_Fin/ctrl_tec.vhd|
+Z46 !s108 1779360228.000000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/ctrl_tec.vhd|
+Z48 !s107 I:/DD2/Dis_Fin/ctrl_tec.vhd|
 !i113 1
 R10
 R11
@@ -279,23 +279,23 @@ R0
 R1
 R2
 R3
-DEx4 work 8 ctrl_tec 0 22 D_W8NPzaRHK_XzbW_z1Q72
+Z49 DEx4 work 8 ctrl_tec 0 22 D_W8NPzaRHK_XzbW_z1Q72
 l27
 L18
 Vmzd`lY?bfzN3o`SnUR>Zm1
 !s100 _L4FGLWbQT3mgTPThg[990
 R7
 32
-Z48 !s110 1779190272
+R45
 !i10b 1
-R37
 R46
 R47
+R48
 !i113 1
 R10
 R11
 Edisplays
-Z49 w1776943229
+R15
 R0
 R1
 R2
@@ -309,11 +309,11 @@ V:m=OC2^I3=QF<<^gUjoO30
 !s100 95IJGR0kbCEf_elDKCi9O1
 R7
 32
-R48
+R45
 !i10b 1
-Z52 !s108 1779190272.000000
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/displays.vhd|
-Z54 !s107 I:/DD2/Dis_Fin/displays.vhd|
+R46
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/displays.vhd|
+Z53 !s107 I:/DD2/Dis_Fin/displays.vhd|
 !i113 1
 R10
 R11
@@ -322,39 +322,39 @@ R0
 R1
 R2
 R3
-DEx4 work 8 displays 0 22 :m=OC2^I3=QF<<^gUjoO30
+Z54 DEx4 work 8 displays 0 22 :m=OC2^I3=QF<<^gUjoO30
 l28
 L21
 V2A9o7iPjJz:U4[iOHKWW<2
 !s100 n:`hzo^d0VS=4h[b3cOJR3
 R7
 32
-R48
+R45
 !i10b 1
+R46
 R52
 R53
-R54
 !i113 1
 R10
 R11
 Emodulo_suma_bcd
-Z55 w1778151257
+R15
 R0
 R1
 R2
 R3
 R4
-Z56 8I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
-Z57 FI:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
+Z55 8I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
+Z56 FI:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd
 l0
 L5
 V^[@aGcHRaBY_@n6hdV1];1
 !s100 nhSPhC_^R4NHQB@V4X[6Q3
 R7
 32
-R16
+R28
 !i10b 1
-R17
+Z57 !s108 1779360251.000000
 Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd|
 Z59 !s107 I:/DD2/Dis_Fin/Modulo_Suma_BCD.vhd|
 !i113 1
@@ -365,88 +365,88 @@ R0
 R1
 R2
 R3
-R31
+R32
 l20
 L15
 VEU]YDe@GVklR_@Wa5?CdP0
 !s100 BImMPZQF3lKoN]`9W3i^H1
 R7
 32
-R16
+R28
 !i10b 1
-R17
+R57
 R58
 R59
 !i113 1
 R10
 R11
 Emultiplicar
-Z60 w1776941830
+R15
 R2
 R3
 R4
-Z61 8I:/DD2/Dis_Fin/Multiplicar.vhd
-Z62 FI:/DD2/Dis_Fin/Multiplicar.vhd
+Z60 8I:/DD2/Dis_Fin/Multiplicar.vhd
+Z61 FI:/DD2/Dis_Fin/Multiplicar.vhd
 l0
 L43
 VXIYW6R@R@7hYkoPR6lnSm1
 !s100 ??z7F==@dER_>03fd>Q8?0
 R7
 32
-R36
+R45
 !i10b 1
 R37
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Multiplicar.vhd|
-Z64 !s107 I:/DD2/Dis_Fin/Multiplicar.vhd|
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Multiplicar.vhd|
+Z63 !s107 I:/DD2/Dis_Fin/Multiplicar.vhd|
 !i113 1
 R10
 R11
 Asyn
 R2
 R3
-Z65 DEx4 work 11 multiplicar 0 22 XIYW6R@R@7hYkoPR6lnSm1
+Z64 DEx4 work 11 multiplicar 0 22 XIYW6R@R@7hYkoPR6lnSm1
 l75
 L53
 VCKc<b`M`K969d6ljFVOX81
 !s100 @<0l83`a:1gO61YJB:JgF0
 R7
 32
-R36
+R45
 !i10b 1
 R37
+R62
 R63
-R64
 !i113 1
 R10
 R11
 Eoperaciones
-Z66 w1778582559
+R15
 R40
 R0
 R1
 R2
 R3
 R4
-Z67 8I:/DD2/Dis_Fin/Operaciones.vhd
-Z68 FI:/DD2/Dis_Fin/Operaciones.vhd
+Z65 8I:/DD2/Dis_Fin/Operaciones.vhd
+Z66 FI:/DD2/Dis_Fin/Operaciones.vhd
 l0
 L6
 VnSKkoATfn4j_Zm4e`VU=g0
 !s100 :G48@NCS?f@c=Dac>1_dN3
 R7
 32
-Z69 !s110 1779190273
+Z67 !s110 1779360229
 !i10b 1
-Z70 !s108 1779190273.000000
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Operaciones.vhd|
-Z72 !s107 I:/DD2/Dis_Fin/Operaciones.vhd|
+Z68 !s108 1779360229.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Operaciones.vhd|
+Z70 !s107 I:/DD2/Dis_Fin/Operaciones.vhd|
 !i113 1
 R10
 R11
 Aestructural
-R65
-Z73 DEx4 work 11 resta_signo 0 22 kL:[A>;l9OB^VOz7ZKK2C3
-Z74 DEx4 work 13 sumador_signo 0 22 6S`?5S`3WY8Ae?jQh@BAL2
+R64
+Z71 DEx4 work 11 resta_signo 0 22 kL:[A>;l9OB^VOz7ZKK2C3
+Z72 DEx4 work 13 sumador_signo 0 22 6S`?5S`3WY8Ae?jQh@BAL2
 R40
 R0
 R1
@@ -455,38 +455,38 @@ R3
 R41
 l19
 L15
-V:mSWb^0Q`ZhiI^eHZ1gnm2
-!s100 OVDW[PZSjnjJ<AHcmFQ560
+VgbDOKocAa4=[7[`:OVzME1
+!s100 6`3<IT[N38n[A3fz]cDFA3
 R7
 32
-R69
+R67
 !i10b 1
+R68
+R69
 R70
-R71
-R72
 !i113 1
 R10
 R11
 Eresta_signo
-Z75 w1777376210
+R15
 R0
 R40
 R2
 R3
 R4
-Z76 8I:/DD2/Dis_Fin/Resta.vhd
-Z77 FI:/DD2/Dis_Fin/Resta.vhd
+Z73 8I:/DD2/Dis_Fin/Resta.vhd
+Z74 FI:/DD2/Dis_Fin/Resta.vhd
 l0
 L5
 VkL:[A>;l9OB^VOz7ZKK2C3
 !s100 `_Cl@V@`3OVb:HiE9^8E`0
 R7
 32
-R69
+R67
 !i10b 1
-R70
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Resta.vhd|
-Z79 !s107 I:/DD2/Dis_Fin/Resta.vhd|
+R68
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Resta.vhd|
+Z76 !s107 I:/DD2/Dis_Fin/Resta.vhd|
 !i113 1
 R10
 R11
@@ -495,41 +495,41 @@ R0
 R40
 R2
 R3
-R73
+R71
 l17
 L13
 VV]5eGJXlIO3T5g>cVh11z3
 !s100 [hOeM[cH_Wl@QZjSkZegz3
 R7
 32
-R69
+R67
 !i10b 1
-R70
-R78
-R79
+R68
+R75
+R76
 !i113 1
 R10
 R11
 Erestador_signo
-Z80 w1777374839
+Z77 w1777374839
 R0
 R40
 R2
 R3
 R4
-R76
-R77
+R73
+R74
 l0
 L5
 V7jebz7:kT?QP3KUKPfl3f2
 !s100 Onfbd50_jdCGFYIHBmjVf2
 R7
 32
-Z81 !s110 1777375103
+Z78 !s110 1777375103
 !i10b 1
-Z82 !s108 1777375103.000000
-R78
-R79
+Z79 !s108 1777375103.000000
+R75
+R76
 !i113 1
 R10
 R11
@@ -545,34 +545,34 @@ V7df=jo78CBa:[_^HQek631
 !s100 iAX0d>MY7PK:?>f@L^e6c0
 R7
 32
-R81
-!i10b 1
-R82
 R78
+!i10b 1
 R79
+R75
+R76
 !i113 1
 R10
 R11
 Esumador_signo
-Z83 w1777376139
+R15
 R0
 R40
 R2
 R3
 R4
-Z84 8I:/DD2/Dis_Fin/Suma.vhd
-Z85 FI:/DD2/Dis_Fin/Suma.vhd
+Z80 8I:/DD2/Dis_Fin/Suma.vhd
+Z81 FI:/DD2/Dis_Fin/Suma.vhd
 l0
 L5
 V6S`?5S`3WY8Ae?jQh@BAL2
 !s100 CM6dA<2L53o^fJ1zif1j83
 R7
 32
-R69
+R67
 !i10b 1
-R52
-Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Suma.vhd|
-Z87 !s107 I:/DD2/Dis_Fin/Suma.vhd|
+R68
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Suma.vhd|
+Z83 !s107 I:/DD2/Dis_Fin/Suma.vhd|
 !i113 1
 R10
 R11
@@ -581,23 +581,63 @@ R0
 R40
 R2
 R3
-R74
+R72
 l18
 L13
 V`W6?BJ<DVZ=dW^o6XUK692
 !s100 Tl6GE;6257LRO[OMW4MSj2
 R7
 32
-R69
+R67
 !i10b 1
-R52
+R68
+R82
+R83
+!i113 1
+R10
+R11
+Etb_top_calculadora
+R15
+R2
+R3
+R4
+Z84 8I:/DD2/Dis_Fin/Test_Top_calculadora.vhd
+Z85 FI:/DD2/Dis_Fin/Test_Top_calculadora.vhd
+l0
+L4
+VkCPbEhP=GjVjEIfFkX?Gj3
+!s100 0lmeoN6Bc_ZMcM42`^?XW2
+R7
+32
+Z86 !s110 1779360253
+!i10b 1
+Z87 !s108 1779360253.000000
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Test_Top_calculadora.vhd|
+Z89 !s107 I:/DD2/Dis_Fin/Test_Top_calculadora.vhd|
+!i113 1
+R10
+R11
+Atest
+Z90 DEx4 work 15 top_calculadora 0 22 G]FD6`jO@a?:Bd9G`6=E63
+R2
+R3
+DEx4 work 18 tb_top_calculadora 0 22 kCPbEhP=GjVjEIfFkX?Gj3
+l19
+L7
+VX]nS]anm@V7W<?5GfP0Wl0
+!s100 MW`7C>am76TY8>LjgbAII1
+R7
+32
 R86
+!i10b 1
 R87
+R88
+R89
 !i113 1
 R10
 R11
 Etest_bcd_bin
-R55
+w1778151257
 R0
 R1
 R2
@@ -636,38 +676,38 @@ R7
 !s110 1778151894
 !i10b 1
 !s108 1778151894.000000
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/test_Bin_BCD.vhd|
-Z89 !s107 I:/DD2/Dis_Fin/test_Bin_BCD.vhd|
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/test_Bin_BCD.vhd|
+Z92 !s107 I:/DD2/Dis_Fin/test_Bin_BCD.vhd|
 !i113 1
 R10
 R11
-Z90 FI:/DD2/Dis_Fin/test_Bin_BCD.vhd
-Z91 8I:/DD2/Dis_Fin/test_Bin_BCD.vhd
+Z93 FI:/DD2/Dis_Fin/test_Bin_BCD.vhd
+Z94 8I:/DD2/Dis_Fin/test_Bin_BCD.vhd
 Etest_bin_bcd
-Z92 w1778152077
+R15
 R0
 R1
 R2
 R3
 R4
-R91
-R90
+R94
+R93
 l0
 L5
 VfVMb8gl_IQS8gLZRK91o10
 !s100 5@OSM?f0n@jNKPZ6NDQL70
 R7
 32
-Z93 !s110 1779190275
+R16
 !i10b 1
-Z94 !s108 1779190275.000000
-R88
-R89
+R17
+R91
+R92
 !i113 1
 R10
 R11
 Atest
-R32
+R33
 R0
 R1
 R2
@@ -679,34 +719,34 @@ VDn0l_fNgJ`z]=<23lZf?S2
 !s100 TQc`mWADO9EF>FEn^h>?i1
 R7
 32
-R93
+R16
 !i10b 1
-R94
-R88
-R89
+R17
+R91
+R92
 !i113 1
 R10
 R11
 Etest_calculadora
-Z95 w1779190291
+R15
 R0
 R1
 R2
 R3
 R4
-Z96 8I:\DD2\Dis_Fin\Test_calculadora.vhd
-Z97 FI:\DD2\Dis_Fin\Test_calculadora.vhd
+Z95 8I:/DD2/Dis_Fin/Test_calculadora.vhd
+Z96 FI:/DD2/Dis_Fin/Test_calculadora.vhd
 l0
 L5
 V>I6nDX`V8QKC<M56:eV_:1
 !s100 ;1l7zg473^1HP:VIQd9aO3
 R7
 32
-Z98 !s110 1779190294
+R16
 !i10b 1
-Z99 !s108 1779190294.000000
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:\DD2\Dis_Fin\Test_calculadora.vhd|
-Z101 !s107 I:\DD2\Dis_Fin\Test_calculadora.vhd|
+R17
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Test_calculadora.vhd|
+Z98 !s107 I:/DD2/Dis_Fin/Test_calculadora.vhd|
 !i113 1
 R10
 R11
@@ -716,42 +756,42 @@ R0
 R1
 R2
 R3
-Z102 DEx4 work 16 test_calculadora 0 22 >I6nDX`V8QKC<M56:eV_:1
+DEx4 work 16 test_calculadora 0 22 >I6nDX`V8QKC<M56:eV_:1
 l24
 L8
 VoMM`XbUOoWQT5_2Z4=:Xc1
 !s100 7Ed7gPX;K?A^a_@G]9c7F3
 R7
 32
-R98
+R16
 !i10b 1
-R99
-R100
-R101
+R17
+R97
+R98
 !i113 1
 R10
 R11
 Etest_operar
-Z103 w1777378780
+R15
 R40
 R0
 R1
 R2
 R3
 R4
-Z104 8I:/DD2/Dis_Fin/Operar_test.vhd
-Z105 FI:/DD2/Dis_Fin/Operar_test.vhd
+Z99 8I:/DD2/Dis_Fin/Operar_test.vhd
+Z100 FI:/DD2/Dis_Fin/Operar_test.vhd
 l0
 L6
 V12=KaH0;]kSV`B@4ZEz^<1
 !s100 3RCJ6RaQ2Gn`mCH>l6<YW1
 R7
 32
-R69
+!s110 1779360230
 !i10b 1
-R70
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Operar_test.vhd|
-Z107 !s107 I:/DD2/Dis_Fin/Operar_test.vhd|
+R68
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Operar_test.vhd|
+Z102 !s107 I:/DD2/Dis_Fin/Operar_test.vhd|
 !i113 1
 R10
 R11
@@ -772,31 +812,31 @@ R7
 !s110 1778151893
 !i10b 1
 !s108 1778151893.000000
-R106
-R107
+R101
+R102
 !i113 1
 R10
 R11
 Etimer
-Z108 w1776337572
+Z103 w1779360128
 R0
 R1
 R2
 R3
 R4
-Z109 8I:/DD2/Dis_Fin/timer.vhd
-Z110 FI:/DD2/Dis_Fin/timer.vhd
+Z104 8I:/DD2/Dis_Fin/timer.vhd
+Z105 FI:/DD2/Dis_Fin/timer.vhd
 l0
 L24
 V9lClT5>jbcVF`F[5m[nMn0
 !s100 l06cJPzQY@7BRSNIFjjh=2
 R7
 32
-R48
+R45
 !i10b 1
-R52
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/timer.vhd|
-Z112 !s107 I:/DD2/Dis_Fin/timer.vhd|
+R46
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/timer.vhd|
+Z107 !s107 I:/DD2/Dis_Fin/timer.vhd|
 !i113 1
 R10
 R11
@@ -805,16 +845,61 @@ R0
 R1
 R2
 R3
-DEx4 work 5 timer 0 22 9lClT5>jbcVF`F[5m[nMn0
+Z108 DEx4 work 5 timer 0 22 9lClT5>jbcVF`F[5m[nMn0
 l48
 L40
 VALmE:@0ejhao?ZK3o13^02
 !s100 8>G?_YXOb`AiLhcGY?;=01
 R7
 32
-R48
+R45
 !i10b 1
-R52
+R46
+R106
+R107
+!i113 1
+R10
+R11
+Etop_calculadora
+R15
+R2
+R3
+R4
+Z109 8I:/DD2/Dis_Fin/Top_calculadora.vhd
+Z110 FI:/DD2/Dis_Fin/Top_calculadora.vhd
+l0
+L4
+VG]FD6`jO@a?:Bd9G`6=E63
+!s100 G9D9H?:WHQJ18oOoXKb[_1
+R7
+32
+R86
+!i10b 1
+R87
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|I:/DD2/Dis_Fin/Top_calculadora.vhd|
+Z112 !s107 I:/DD2/Dis_Fin/Top_calculadora.vhd|
+!i113 1
+R10
+R11
+Aestructural
+R54
+R42
+R49
+R0
+R1
+R108
+R2
+R3
+R90
+l36
+L15
+V^EA0>a@VfaW55N_E7HheG1
+!s100 R3XaGd8fhlCi`LW;jZ8n^0
+R7
+32
+R86
+!i10b 1
+R87
 R111
 R112
 !i113 1
